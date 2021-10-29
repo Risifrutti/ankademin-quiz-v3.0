@@ -1,0 +1,35 @@
+body {
+    background-color: #DBE5E6;
+    color: #231F1B;
+    flex: auto;
+    text-align: center;
+}
+
+.dark-mode {
+    background-color: #231F1B;
+    color: #DBE5E6;
+}
+
+#darkMode {
+    background-color: #555555;
+    color: #DBE5E6;
+    border-radius: 12px;
+    cursor: pointer;
+    border: solid 1px #DBE5E6;
+}
+
+#resetButton {
+    background-color: #DF0105;
+    color: #DBE5E6;
+    border-radius: 12px;
+    cursor: pointer;
+    border: solid 1px #555555;
+}
+
+.correct {
+    color: #2BCA7A;
+}
+
+.false {
+    color: #DF0105;
+}

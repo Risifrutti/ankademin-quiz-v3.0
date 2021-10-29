@@ -1,5 +1,20 @@
 let container = document.querySelector("#container");
 
+// Dark mode
+
+let darkModeButton = document.querySelector("#darkMode");
+darkModeButton.addEventListener("click", () => {
+    let toggleDarkMode = document.body;
+    toggleDarkMode.classList.toggle("dark-mode");
+})
+
+// Reset button
+
+let resetButton = document.querySelector("#resetButton");
+resetButton.addEventListener("click", () => {
+    location.reload();
+})
+
 
 // First question
 let firstStatement = document.querySelectorAll("[name='firstStatement']");
@@ -8,7 +23,7 @@ let false1 = document.querySelector("#false1");
 firstStatement.forEach(btn1 => {
     btn1.addEventListener ("click", () => {
         if (btn1.value === "true") {
-            correct1.innerHTML = `Correct answer!`;
+            correct1.innerHTML = `Correct answer! Venus' atmospheric density and it's position to the sun makes it hotter than Mercury.`;
             false1.innerHTML = ``;
         } else if (btn1.value === "false") {
             false1.innerHTML = `Wrong answer... :(`;
@@ -24,7 +39,7 @@ let false2 = document.querySelector("#false2");
 secondStatement.forEach(btn2 => {
     btn2.addEventListener ("click", () => {
         if (btn2.value === "true") {
-            correct2.innerHTML = `Correct answer!`;
+            correct2.innerHTML = `Correct answer! And imagine, they built it without machines!`;
             false2.innerHTML = ``;
         } else if (btn2.value === "false") {
             false2.innerHTML = `Wrong answer... :(`;
@@ -40,7 +55,7 @@ let false3 = document.querySelector("#false3");
 thirdStatement.forEach(btn3 => {
     btn3.addEventListener("click", () => {
         if (btn3.value === "false") {
-            correct3.innerHTML = `Correct answer!\nAndromeda is located 2,5 million lightyears from Milky Way!`; 
+            correct3.innerHTML = `Correct answer! Andromeda is located 2,5 million lightyears from the Milky Way!`; 
             false3.innerHTML = ``;
         } else if (btn3.value === "true") {
             false3.innerHTML = `Wrong answer... :(`;
@@ -72,7 +87,7 @@ let false5 = document.querySelector("#false5");
 fifthStatement.forEach(btn5 => {
     btn5.addEventListener("click", () => {
         if (btn5.value === "false") {
-            correct5.innerHTML = `Correct answer!`;
+            correct5.innerHTML = `Correct answer! The tip of the tower reaches 324 meters!`;
             false5.innerHTML = ``;
         } else if (btn5.value === "true") {
             false5.innerHTML = `Wrong answer... :(`;
@@ -152,7 +167,7 @@ let false10 = document.querySelector("#false10");
 tenthStatement.forEach(btn10 => {
     btn10.addEventListener("click", () => {
         if (btn10.value === "true") {
-            correct10.innerHTML = "Correct! Bob Klose is somewhat of a hidden member of Pink Floyd :)";
+            correct10.innerHTML = "Correct! Bob Klose was somewhat of a hidden member of Pink Floyd :)";
             false10.innerHTML = "";
         } else if (btn10.value === "false") {
             false10.innerHTML = "Wrong answer... try again!";
